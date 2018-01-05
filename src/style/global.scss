@@ -1,0 +1,340 @@
+//样式表书写原则 - 样式有两种：全局的和私有的。私有的写在自己的组件里。全局的写在这个文件里。
+//全局的样式又分两种：一种是无层次关系的，一种是有层次关系的。
+
+/* -------------------------------- 无层次关系的 -------------------------------- */
+
+body {
+    font-family: "webfont-roboto-regular", Arial, "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+}
+
+//textarea 不继承body的样式
+textarea {
+    resize: none !important;
+    font-family: "webfont-roboto-regular", Arial, "Microsoft YaHei", sans-serif;
+}
+
+fieldset {
+    //  padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.mt-33 {
+    margin-top: 33px;
+}
+
+.clearfix {
+    &:before {
+        content: '';
+        display: table;
+    }
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.hr {
+    height: 1px;
+    width: 100%;
+    background: #ddd;
+}
+
+.el-checkbox {
+    font-size: 15px;
+}
+
+.el-table--small {
+    font-size: 14px;
+}
+
+.el-tabs__item {
+    color: #91a8b0;
+}
+
+.custom-breadcrumb {
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+.el-form-item__label {
+    color: #36404a;
+}
+
+.el-collapse-item__content {
+    padding-bottom: 5px;
+}
+
+.submit-button--position {
+    margin-top: 18px;
+    &>.el-form-item__content {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+}
+
+.el-date-editor--daterange.el-input,
+.el-date-editor--daterange.el-input__inner,
+.el-date-editor--timerange.el-input,
+.el-date-editor--timerange.el-input__inner {
+    width: 230px;
+}
+
+.el-step__title.is-process {
+    color: #409EFF;
+}
+
+.el-step__head.is-process {
+    .is-text {
+        border-color: #409EFF;
+        color: #409EFF;
+    }
+}
+
+.el-upload-list--picture-card .el-upload-list__item {
+    width: 480px;
+    height: 270px;
+    display: list-item;
+}
+
+.el-upload-dragger {
+    width: auto;
+    height: auto;
+}
+
+.img-thumbnail {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.img-thumbnail--big {
+    width: 25%;
+    height: auto;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.custom-dialog {
+    .el-dialog__header {
+        background-color: #36404a;
+        &>.el-dialog__title {
+            color: #fff;
+        }
+        &>.el-dialog__headerbtn .el-dialog__close {
+            color: #fff;
+        }
+    }
+    .el-form-item__label {
+        color: #515962;
+    }
+    .el-input {
+        &.fixedWidth {
+            width: 293px;
+        }
+        &>.el-input__inner {
+            color: #7e939a;
+        }
+    }
+    .el-dialog__footer {
+        //      text-align: center;
+    }
+    .el-textarea__inner {
+        width: 293px;
+        color: #7e939a;
+    }
+}
+
+.custom-table {
+    width: 100%;
+    border: 1px solid #eee;
+    th {
+        background: #eaf2f4;
+        color: #36404a;
+        padding: 7px 20px;
+        &:not(:last-child) {
+            text-align: left;
+            border-right: 1px solid #eff5f7;
+        }
+    }
+    tr:not(:last-child) {
+        td {
+            border-bottom: 1px solid #eff5f7;
+        }
+    }
+    td {
+        padding: 18px 20px;
+        text-align: center;
+        &:not(:last-child) {
+            border-right: 1px solid #eee;
+        }
+        &:first-child {
+            width: 230px;
+            .el-input__inner {
+                width: 230px;
+            }
+        }
+        &:last-child {
+            width: 102px;
+        }
+        .el-input__inner {
+            width: 100%;
+        }
+        .el-form-item {
+            margin: 0;
+        }
+    }
+}
+
+.custom-popover {
+    min-width: auto;
+    max-width: 200px;
+}
+
+.custom-multiSelect {
+    width: auto;
+    .el-select__input {
+        //      margin-left: 5px;
+    }
+    .el-select__multiple-text {
+        display: inline-block;
+        vertical-align: middle; //      margin-left: 10px;
+    }
+}
+
+.form-expand {
+    padding-top: 18px;
+    .el-form-item__content {
+        color: #7e939a;
+    }
+    .show-enddate {
+        padding-left: 10px;
+    }
+}
+
+//css 过渡
+.fade-enter-active,
+.fade-leave-active {
+    transition: all .5s
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.change-user-box {
+    position: fixed;
+    width: 200px;
+    height: 56px;
+    left: 0;
+    top: 60px;
+    background: #fff;
+    padding-top: 8px;
+}
+
+.el-select-dropdown {
+    //不能这样写，会使所有的下拉在屏幕左边
+    //  left: 0px !important;
+}
+
+
+/* -------------------------------- 有层次关系的 -------------------------------- */
+
+.main {
+    background: #fff;
+    padding: 0 10px;
+    min-height: 100%;
+    .content-title {
+        color: #36404a;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+    .content-search {
+        padding-bottom: 20px;
+        .search_input {
+            display: inline-block;
+            width: 200px;
+        }
+        &>.custome-form-inline {
+            &.browser {
+                .el-form-item__content>.el-input {
+                    @media only screen and (max-width: 1366px) {
+                        width: 140px;
+                    }
+                }
+                .el-select {
+                    @media only screen and (max-width: 1366px) {
+                        width: 143px;
+                    }
+                }
+            }
+            .el-form-item {
+                margin-bottom: 0;
+            }
+            .el-select {
+                @media only screen and (max-width: 1366px) {
+                    width: 120px;
+                }
+                &.custom-multiSelect {
+                    width: 290px;
+                    @media only screen and (max-width: 1366px) {
+                        &.multiSelect-width {
+                            width: 150px;
+                            .el-select__multiple-text {
+                                max-width: 68px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .table-custom {
+        border-left: 1px solid #dfe6ec;
+        border-right: 1px solid #dfe6ec;
+        .table-header {
+            /* background: #eaf2f4;*/
+            color: #36404a;
+            th {
+                font-weight: bold;
+            }
+        }
+        .table-row {
+            background: #f7fbff;
+        }
+    }
+    .pagination-custom {
+        padding: 10px 0;
+        text-align: right;
+    }
+}
+
+#nprogress .bar,
+#nprogress .spinner {
+    z-index: 2000;
+}
+
+#nprogress .bar {
+    background: #0f0!important;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: #0f0!important;
+    border-left-color: #0f0!important;
+}
+
+.table-header,
+.el-table th {
+    background-color: #e3f7fc!important;
+    background: #e3f7fc!important;
+}

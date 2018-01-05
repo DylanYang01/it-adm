@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?d0i4pu');
+  src:  url('fonts/icomoon.eot?d0i4pu#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?d0i4pu') format('truetype'),
+    url('fonts/icomoon.woff?d0i4pu') format('woff'),
+    url('fonts/icomoon.svg?d0i4pu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-unavailability:before {
+  content: "\e91b";
+}
+.icon-active:before {
+  content: "\e924";
+}
+.icon-dashboard:before {
+  content: "\e900";
+}
+.icon-delete:before {
+  content: "\e901";
+}
+.icon-edit:before {
+  content: "\e902";
+}
+.icon-export:before {
+  content: "\e903";
+}
+.icon-money .path1:before {
+  content: "\e904";
+  color: rgb(48, 60, 66);
+}
+.icon-money .path2:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(215, 204, 200);
+}
+.icon-money .path3:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(215, 204, 200);
+}
+.icon-money .path4:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(215, 204, 200);
+}
+.icon-money .path5:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.1;
+}
+.icon-money .path6:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.2;
+}
+.icon-money .path7:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.2;
+}
+.icon-money .path8:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.1;
+}
+.icon-money .path9:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(48, 60, 66);
+}
+.icon-money .path10:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(253, 209, 176);
+}
+.icon-money .path11:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-money .path12:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(106, 147, 255);
+}
+.icon-money .path13:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.1;
+}
+.icon-money .path14:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-password:before {
+  content: "\e912";
+}
+.icon-pending-review:before {
+  content: "\e913";
+}
+.icon-recharge:before {
+  content: "\e914";
+}
+.icon-reject:before {
+  content: "\e915";
+}
+.icon-reset-pw:before {
+  content: "\e916";
+}
+.icon-review:before {
+  content: "\e917";
+}
+.icon-search:before {
+  content: "\e918";
+}
+.icon-start:before {
+  content: "\e919";
+}
+.icon-stop:before {
+  content: "\e91a";
+}
+.icon-user:before {
+  content: "\e91c";
+}
+.icon-user-2:before {
+  content: "\e91d";
+}
+.icon-view:before {
+  content: "\e91e";
+}
+.icon-account:before {
+  content: "\e91f";
+}
+.icon-ad:before {
+  content: "\e920";
+}
+.icon-add:before {
+  content: "\e921";
+}
+.icon-ad-review:before {
+  content: "\e922";
+}
+.icon-complete:before {
+  content: "\e923";
+}
